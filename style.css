@@ -102,3 +102,70 @@ input {
   margin: auto 0.5rem;
   cursor: pointer;
 }
+
+/* left__dancer */
+.dancer {
+  height: 310px;
+}
+
+.dancer > * {
+  margin-left: 1.25rem;
+}
+
+.dancer__input {
+  width: 70px;
+  height: 46px;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  padding-left: 1rem;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  border-bottom-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-top-width: 1px;
+  border-width: 0px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  border-bottom-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-top-width: 1px;
+  border-width: 0px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 5px 5px;
+  word-break: normal;
+}
+.tg .dancer__label {
+  border-color: inherit;
+  font-size: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .dancer__cell {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.dancer__input--name {
+  max-width: 88px;
+}
+
+/* left_category */
+.category {
+  height: 150px;
+}
