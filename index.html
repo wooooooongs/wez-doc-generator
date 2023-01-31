@@ -14,8 +14,14 @@
           <p class="music__title title">곡</p>
           <div class="music-info-container__artist">
             <div class="music-info__input-container">
-              <label class="music-info__label" for="artist-eng">아티스트(영어)</label>
-              <input class="music-info__input" id="artist-eng" placeholder="BTS" type="text" />
+              <label class="music-info__label" for="artistFirst">아티스트(영어)</label>
+              <input
+                class="music-info__input"
+                id="artistFirst"
+                onkeyup="changeMusicInfo(this)"
+                placeholder="BTS"
+                type="text"
+              />
             </div>
             <div class="changer">
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,14 +42,26 @@
               </svg>
             </div>
             <div class="music-info__input-container">
-              <label class="music-info__label" for="artist-kor">아티스트(한글)</label>
-              <input class="music-info__input" id="artist-kor" placeholder="방탄소년단" type="text" />
+              <label class="music-info__label" for="artistSecond">아티스트(한글)</label>
+              <input
+                class="music-info__input"
+                id="artistSecond"
+                onkeyup="changeMusicInfo(this)"
+                placeholder="방탄소년단"
+                type="text"
+              />
             </div>
           </div>
           <div class="music-info-container__music">
             <div class="music-info__input-container">
-              <label class="music-info__label" for="music-eng">곡(영어)</label>
-              <input class="music-info__input" id="music-eng" placeholder="Run BTS" type="text" />
+              <label class="music-info__label" for="musicFirst">곡(영어)</label>
+              <input
+                class="music-info__input"
+                id="musicFirst"
+                onkeyup="changeMusicInfo(this)"
+                placeholder="Run BTS"
+                type="text"
+              />
             </div>
             <div class="changer">
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,8 +83,14 @@
             </div>
 
             <div class="music-info__input-container">
-              <label class="music-info__label" for="music-kor">곡(한글)</label>
-              <input class="music-info__input" id="music-kor" placeholder="달려라 방탄" type="text" />
+              <label class="music-info__label" for="musicSecond">곡(한글)</label>
+              <input
+                class="music-info__input"
+                id="musicSecond"
+                onkeyup="changeMusicInfo(this)"
+                placeholder="달려라 방탄"
+                type="text"
+              />
             </div>
           </div>
         </div>
@@ -97,6 +121,13 @@
         </div>
         <div class="left-container__div category">
           <p class="category__title title">카테고리</p>
+          <div class="category__button-container">
+            <button class="category__button" value="public">KPOP IN PUBLIC</button>
+            <button class="category__button" value="main">Main</button>
+            <button class="category__button" value="special">Special</button>
+            <button class="category__button" value="log">Log</button>
+            <button class="category__button" value="practice">Practice</button>
+          </div>
         </div>
       </div>
       <div class="vertical-separator"></div>
