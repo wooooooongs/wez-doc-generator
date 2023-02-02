@@ -41,12 +41,7 @@ Instagram : https://www.instagram.com/we_z_official/
 
   document.querySelectorAll('.right__text').forEach((button) => {
     button.addEventListener('mouseover', (e) => {
-      console.log(e.currentTarget.childNodes[1]);
       e.currentTarget.childNodes[1].classList.add('hovered');
-    });
-    button.addEventListener('mouseout', (e) => {
-      console.log(e.currentTarget.childNodes[1]);
-      e.currentTarget.childNodes[1].classList.remove('hovered');
     });
   });
 };
@@ -80,6 +75,7 @@ document.querySelectorAll('.right__text').forEach((el) => {
     currentText.childNodes[1].innerText = 'Copied!';
     setTimeout(() => {
       currentText.childNodes[1].innerText = 'Copy';
+      currentText.childNodes[1].classList.remove('hovered');
     }, 1000);
   });
 });
