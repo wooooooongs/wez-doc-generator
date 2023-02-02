@@ -319,6 +319,7 @@ p {
 
 /* right__content */
 .content__text {
+  white-space: pre-wrap;
   max-height: 40vh;
   height: 100%;
 }
