@@ -14,38 +14,20 @@
           <p class="music__title title">곡</p>
           <div class="music-info-container__artist">
             <div class="music-info__input-container">
-              <label class="music-info__label" for="artistFirst">아티스트(영어)</label>
+              <label class="music-info__label" for="artistInput">아티스트</label>
               <input
                 class="music-info__input"
-                id="artistFirst"
+                id="artistInput"
                 onkeyup="changeMusicInfo(this)"
                 placeholder="BTS"
                 type="text"
               />
             </div>
-            <div class="changer">
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.6818 15.8489L18.6822 10.8485L13.6818 5.84808"
-                  stroke="#6B6B6B"
-                  stroke-width="1.66678"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.01479 5.84833L2.01436 10.8488L7.01479 15.8492"
-                  stroke="#6B6B6B"
-                  stroke-width="1.66678"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
             <div class="music-info__input-container">
-              <label class="music-info__label" for="artistSecond">아티스트(한글)</label>
+              <label class="music-info__label" for="artistInputBracket">추가 정보</label>
               <input
                 class="music-info__input"
-                id="artistSecond"
+                id="artistInputBracket"
                 onkeyup="changeMusicInfo(this)"
                 placeholder="방탄소년단"
                 type="text"
@@ -54,39 +36,21 @@
           </div>
           <div class="music-info-container__music">
             <div class="music-info__input-container">
-              <label class="music-info__label" for="musicFirst">곡(영어)</label>
+              <label class="music-info__label" for="musicInput">곡</label>
               <input
                 class="music-info__input"
-                id="musicFirst"
+                id="musicInput"
                 onkeyup="changeMusicInfo(this)"
                 placeholder="Run BTS"
                 type="text"
               />
             </div>
-            <div class="changer">
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.6818 15.8489L18.6822 10.8485L13.6818 5.84808"
-                  stroke="#6B6B6B"
-                  stroke-width="1.66678"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.01479 5.84833L2.01436 10.8488L7.01479 15.8492"
-                  stroke="#6B6B6B"
-                  stroke-width="1.66678"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
 
             <div class="music-info__input-container">
-              <label class="music-info__label" for="musicSecond">곡(한글)</label>
+              <label class="music-info__label" for="musicInputBracket">추가 정보</label>
               <input
                 class="music-info__input"
-                id="musicSecond"
+                id="musicInputBracket"
                 onkeyup="changeMusicInfo(this)"
                 placeholder="달려라 방탄"
                 type="text"

@@ -91,6 +91,7 @@ p {
 .music-info-container__music {
   display: flex;
   margin-left: 1.5rem;
+  gap: 1rem;
 }
 
 .music-info-container__artist {
@@ -102,7 +103,6 @@ p {
   flex-direction: column;
   border: 1px solid #c5c5c5;
   border-radius: 3px;
-  width: 250px;
   height: 45px;
 }
 
