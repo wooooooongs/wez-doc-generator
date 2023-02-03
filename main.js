@@ -13,15 +13,6 @@ musicInfoInput.forEach((input) => {
 });
 
 rightText.forEach((el) => {
-  el.addEventListener('click', (e) => {
-    const currentText = e.currentTarget;
-
-    copyToClipboard(currentText.innerText);
-
-    currentText.childNodes[1].innerText = 'Copied!';
-    setTimeout(() => {
-      currentText.childNodes[1].innerText = 'Copy';
-      currentText.childNodes[1].classList.remove('hovered');
-    }, 1000);
+  el.addEventListener('click', copyToClipboard);
   });
 });

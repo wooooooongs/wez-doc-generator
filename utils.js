@@ -28,7 +28,7 @@ const applyNewData = (updatedData) => {
 Instagram : https://www.instagram.com/we_z_official/
 
 
-#LESSERAFIM #ANTIFRAGILE #WEZ #르세라핌 #위즈 #ONETAKE
+#${convertForTag(artistInput)} #${convertForTag(musicInput)} #WEZ #${convertForTag(artistInputBracket)} #위즈
 <button class="copy-button">Copy</button>`;
 
   document.querySelectorAll('.right__text').forEach((button) => {
@@ -49,10 +49,18 @@ const selectCategory = (e) => {
   applyNewData(musicData);
 };
 
-const copyToClipboard = (text) => {
-  text = text.slice(0, -5);
-
-  navigator.clipboard.writeText(text);
+const convertForTag = (text) => {
+  return text.replaceAll(' ', '').toUpperCase();
 };
 
-export { changeMusicInfo, selectCategory, copyToClipboard };
+const copyToClipboard = (e) => {
+  const targetNode = e.currentTarget.childNodes;
+  navigator.clipboard.writeText(targetNode[0].nodeValue);
+
+  targetNode[1].innerText = 'Copied!';
+  setTimeout(() => {
+    targetNode[1].innerText = 'Copy';
+  }, 1000);
+};
+
+export { getMusicInfo, selectCategory, copyToClipboard, selectWezMember, deleteDancer };
