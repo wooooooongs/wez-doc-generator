@@ -7,4 +7,13 @@ let musicData = {
   region: '',
 };
 
-export default musicData;
+let selectedWezMemberList = [
+  {
+    artistName: '',
+    wezName: '',
+    wezEngName: '',
+    wezIg: '',
+  },
+];
+
+export { musicData, selectedWezMemberList };
