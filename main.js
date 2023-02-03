@@ -1,4 +1,4 @@
-import { changeMusicInfo, selectCategory, copyToClipboard } from './utils.js';
+import { getMusicInfo, selectCategory, copyToClipboard, selectWezMember, deleteDancer } from './utils.js';
 
 const categoryButton = document.querySelectorAll('.category__button');
 const musicInfoInput = document.querySelectorAll('.music-info__input');
@@ -9,7 +9,7 @@ categoryButton.forEach((button) => {
 });
 
 musicInfoInput.forEach((input) => {
-  input.addEventListener('keydown', changeMusicInfo);
+  input.addEventListener('keyup', getMusicInfo);
 });
 
 rightText.forEach((el) => {

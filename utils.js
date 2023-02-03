@@ -38,9 +38,9 @@ Instagram : https://www.instagram.com/we_z_official/
   });
 };
 
-const changeMusicInfo = (e) => {
-  const currentInputId = e.getAttribute('id');
-  musicData[currentInputId] = e.value;
+const getMusicInfo = (e) => {
+  const currentInputId = e.target.getAttribute('id');
+  musicData[currentInputId] = e.target.value;
   applyNewData(musicData);
 };
 
