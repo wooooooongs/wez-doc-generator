@@ -35,6 +35,10 @@ Instagram : https://www.instagram.com/we_z_official/
     button.addEventListener('mouseover', (e) => {
       e.currentTarget.childNodes[1].classList.add('hovered');
     });
+
+    button.addEventListener('mouseout', (e) => {
+      e.currentTarget.childNodes[1].classList.remove('hovered');
+    });
   });
 };
 
