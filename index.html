@@ -36,15 +36,16 @@
         </div>
         <div class="left-container__div dancer">
           <p class="dancer__title title">댄서</p>
-          <table class="tg">
-            <thead>
-              <tr>
-                <th class="dancer__label">그룹 멤버명</th>
-                <th class="dancer__label">위즈 멤버명(한글)</th>
-                <th class="dancer__label">위즈 멤버명(영어)</th>
-                <th class="dancer__label">인스타 아이디</th>
-              </tr>
-            </thead>
+          <div class="table-wrapper">
+            <table class="tg">
+              <thead>
+                <tr>
+                  <th class="dancer__label">그룹 멤버명</th>
+                  <th class="dancer__label">위즈 멤버명(한글)</th>
+                  <th class="dancer__label">위즈 멤버명(영어)</th>
+                  <th class="dancer__label">인스타 아이디</th>
+                </tr>
+              </thead>
               <tbody class="dancer__tbody">
                 <tr class="dancer__tr">
                   <td class="dancer__cell">
@@ -57,12 +58,12 @@
                       <option value="재웅">재웅</option>
                     </select>
                   </td>
-                <td class="dancer__cell">
-                  <input class="dancer__input--name" type="text" value="JaeWoong" readonly />
-                </td>
-                <td class="dancer__cell">
-                  <input class="dancer__input--ig" type="text" value="@wooooooong_s" readonly />
-                </td>
+                  <td class="dancer__cell">
+                    <input class="dancer__input--name" type="text" value="JaeWoong" readonly />
+                  </td>
+                  <td class="dancer__cell">
+                    <input class="dancer__input--ig" type="text" value="@wooooooong_s" readonly />
+                  </td>
                   <td class="delete">
                     <svg
                       width="21"
@@ -87,9 +88,10 @@
                       />
                     </svg>
                   </td>
-              </tr>
-            </tbody>
-          </table>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div class="left-container__div category">
           <p class="category__title title">카테고리</p>

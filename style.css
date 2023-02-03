@@ -10,7 +10,8 @@ body {
   margin: 0;
 }
 
-input {
+input,
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -126,7 +127,7 @@ p {
 
 /* left__dancer */
 .dancer {
-  height: 310px;
+  min-height: 310px;
 }
 
 .dancer > * {
@@ -141,10 +142,24 @@ p {
   padding-left: 1rem;
 }
 
+.dancer__input--wez {
+  width: 70px;
+  height: 46px;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  padding-left: 1rem;
+}
+
+.table-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
 .tg {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 .tg td {
   border-bottom-width: 1px;
   border-color: black;
@@ -326,6 +341,6 @@ p {
 
 /* right__tag */
 .tag__text {
-  max-height: 13vh;
+  max-height: 12vh;
   height: 100%;
 }
