@@ -96,6 +96,10 @@ const selectWezMember = (e) => {
   }
 };
 
+const deleteDancer = (e) => {
+  e.currentTarget.parentNode.remove();
+};
+
 const selectCategory = (e) => {
   musicData.category = e.target.value;
   applyNewData(musicData);

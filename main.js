@@ -9,6 +9,11 @@ const dancerTable = document.querySelector('.dancer__tbody');
 const selectObserver = new MutationObserver((mutations) => {
   mutations.forEach(() => {
     const wezSelect = document.querySelectorAll('.dancer__input--wez');
+    const deleteButton = document.querySelectorAll('.delete');
+
+    deleteButton.forEach((button, index) => {
+      if (index > 0) button.addEventListener('click', deleteDancer);
+    });
 
     wezSelect.forEach((select) => {
       select.addEventListener('change', selectWezMember);

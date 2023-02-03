@@ -201,6 +201,10 @@ p {
   max-width: 88px;
 }
 
+.delete {
+  cursor: pointer;
+}
+
 /* left_category */
 .category {
   height: 150px;
