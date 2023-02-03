@@ -44,6 +44,58 @@ const getMusicInfo = (e) => {
   applyNewData(musicData);
 };
 
+const selectWezMember = (e) => {
+  const dancerRow = `<tr class="dancer__tr">
+  <td class="dancer__cell">
+    <input class="dancer__input dancer__input--artist" placeholder="제이홉" type="text" />
+  </td>
+  <td class="dancer__cell">
+    <select class="dancer__input dancer__input--wez">
+      <option value="기본">-</option>
+      <option value="슬기">슬기</option>
+      <option value="재웅">재웅</option>
+    </select>
+  </td>
+  <td class="dancer__cell">
+    <input class="dancer__input--name" type="text" value="JaeWoong" readonly />
+  </td>
+  <td class="dancer__cell">
+    <input class="dancer__input--ig" type="text" value="@wooooooong_s" readonly />
+  </td>
+  <td class="delete">
+    <svg
+      width="21"
+      height="21"
+      viewBox="0 0 21 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.3398 5.1599L5.33893 15.1608"
+        stroke="#6B6B6B"
+        stroke-width="1.66678"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5.33893 5.1599L15.3398 15.1608"
+        stroke="#6B6B6B"
+        stroke-width="1.66678"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </td>
+  </tr>`;
+  const dancerTable = document.querySelector('.dancer__tbody');
+  const wezSelect = document.querySelectorAll('.dancer__input--wez');
+  const dancerNum = wezSelect.length;
+
+  if (e.target.value !== '기본' && e.target === wezSelect[dancerNum - 1]) {
+    dancerTable.insertAdjacentHTML('beforeend', dancerRow);
+  }
+};
+
 const selectCategory = (e) => {
   musicData.category = e.target.value;
   applyNewData(musicData);
