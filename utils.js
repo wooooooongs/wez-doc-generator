@@ -17,7 +17,6 @@ ${
     .map((dancer) => {
       const { artistName, wezName, wezEngName, wezIg } = dancer;
       const dancerInfo = `${artistName} ${wezName} ${wezEngName} ${wezIg}\n`;
-      console.log(dancerInfo);
       return dancerInfo;
     })
     .join('')
@@ -32,9 +31,9 @@ ${
   Instagram : https://www.instagram.com/we_z_official/
   
   
-  #${convertForTag(artistInput)} #${convertForTag(musicInput)} #WEZ #${convertForTag(
-    artistInputBracket
-  )} #위즈
+  #${convertForTag(artistInput)} #${convertForTag(
+    musicInput,
+  )} #WEZ #${convertForTag(artistInputBracket)} #위즈
   <button class="copy-button">Copy</button>`;
 };
 
@@ -67,6 +66,7 @@ const toggleCopyButton = () => {
 const getMusicInfo = (e) => {
   const currentInputId = e.target.getAttribute('id');
   musicData[currentInputId] = e.target.value;
+
   applyNewTitleData(musicData);
   applyNewContentData();
 };
