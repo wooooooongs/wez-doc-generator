@@ -1,5 +1,5 @@
 import { musicData, selectedWezMemberList } from './store.js';
-import WezMemberList from './constants.js';
+import MEMBER_LIST from './constants.js';
 
 const applyNewContentData = (updatedData) => {
   const { artistInput, musicInput, artistInputBracket } = musicData;
@@ -74,11 +74,15 @@ const getMusicInfo = (e) => {
 const selectWezMember = (e) => {
   const memberName = e.target.value;
 
-  e.target.parentNode.parentNode.childNodes[5].childNodes[1].value = WezMemberList[memberName]['engName'];
-  e.target.parentNode.parentNode.childNodes[7].childNodes[1].value = WezMemberList[memberName]['ig'];
+  e.target.parentNode.parentNode.childNodes[5].childNodes[1].value =
+    MEMBER_LIST[memberName]['engName'];
+  e.target.parentNode.parentNode.childNodes[7].childNodes[1].value =
+    MEMBER_LIST[memberName]['ig'];
 
-  const memberEngName = e.target.parentNode.parentNode.childNodes[5].childNodes[1].value;
-  const memberIg = e.target.parentNode.parentNode.childNodes[7].childNodes[1].value;
+  const memberEngName =
+    e.target.parentNode.parentNode.childNodes[5].childNodes[1].value;
+  const memberIg =
+    e.target.parentNode.parentNode.childNodes[7].childNodes[1].value;
 
   applyNewContentData(selectedWezMemberList);
 
@@ -156,4 +160,10 @@ const copyToClipboard = (e) => {
   }, 1000);
 };
 
-export { getMusicInfo, selectCategory, copyToClipboard, selectWezMember, deleteDancer };
+export {
+  getMusicInfo,
+  selectCategory,
+  copyToClipboard,
+  selectWezMember,
+  deleteDancer,
+};
