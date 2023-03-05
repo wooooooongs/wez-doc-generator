@@ -82,6 +82,9 @@ const selectWezMember = (e) => {
 
   applyNewContentData(selectedWezMemberList);
 
+  const dancerTable = document.querySelector('.dancer__tbody');
+  const wezSelect = document.querySelectorAll('.dancer__input--wez');
+  const dancerNum = wezSelect.length;
   const dancerRow = `<tr class="dancer__tr">
   <td class="dancer__cell">
     <input class="dancer__input dancer__input--artist" placeholder="제이홉" type="text" />
@@ -124,9 +127,6 @@ const selectWezMember = (e) => {
     </svg>
   </td>
   </tr>`;
-  const dancerTable = document.querySelector('.dancer__tbody');
-  const wezSelect = document.querySelectorAll('.dancer__input--wez');
-  const dancerNum = wezSelect.length;
 
   if (e.target.value !== '기본' && e.target === wezSelect[dancerNum - 1]) {
     dancerTable.insertAdjacentHTML('beforeend', dancerRow);
